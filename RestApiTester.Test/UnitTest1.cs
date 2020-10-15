@@ -28,7 +28,7 @@ namespace RestApiTester.Test
                 for (int i = 0; i < items; i++)
                 {
                     bool res = response.Channel.Items[i].Description.ToLower().Contains(searchName.ToLower());
-                    Assert.IsTrue(res, "РОБИТ");
+                    Assert.IsTrue(res, "Поиск корректен!");
                 }
             }
         }
